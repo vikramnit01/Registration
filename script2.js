@@ -16,7 +16,7 @@ function isValid(){
     const branch=document.getElementById('branch').value;
     
     var namePattern = /^[A-Za-z ]{2,15}$/;
-    var emailPattern = /^[A-Za-z][A-Za-z0-9_.]{2,}@[A-Za-z.]{1,}[A-Za-z.]{2,4}$/;
+    var emailPattern = /^[A-Za-z0-9_.]{2,}@[A-Za-z]{2,}[.]{1}[A-Za-z.]{2,6}$/;
     var passwordPattern = /^(?=.*[0-9])(?=.*[!@#$%^&])[a-zA-Z0-9!@#$%^&]{6,16}$/
     var mobilePattern = /^[6789][0-9]{9}$/;
 
