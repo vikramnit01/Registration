@@ -24,30 +24,47 @@ function isValid(){
     if (!namePattern.test(name)) {
         document.getElementById('errorName').innerHTML = "Name length between 2 to 15"
         return false;
+    }else{
+        document.getElementById('errorName').innerHTML = ""
     }
+
     if (!emailPattern.test(email)) {
         document.getElementById('errorEmail').innerHTML = "Invalid Email format";
         return false;
+    }else{
+        document.getElementById('errorEmail').innerHTML = "";
+
     }
     
     if (!passwordPattern.test(password)) {
         document.getElementById('errorPassword').innerHTML = "contain atlest One Character, Special Character,Number"
         return false;
+    }else{
+        document.getElementById('errorPassword').innerHTML = ""
+
     }
 
     if (password != confirmPassword) {
        document.getElementById('errorConfPass').innerHTML = "Password Mismatched"
        return false;
+    }else{
+       document.getElementById('errorConfPass').innerHTML = ""
+
     }
 
     if(!mobilePattern.test(mobile)) {
         document.getElementById('errorMobile').innerHTML = "Mobile Number must be of 10 digits"
         return false;
+    }else{
+        document.getElementById('errorMobile').innerHTML = ""
     }
     
     if(branch == "Please Select"){
      document.getElementById('errorBranch').innerHTML = "Please select an Option"
      return false;
+    }else{
+     document.getElementById('errorBranch').innerHTML = ""
+
     }
 
 
