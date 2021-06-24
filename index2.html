@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+	<div class="header">
+		<h2>Registration Form</h2>
+	</div>
+	<form id="form" class="form">
+		<div class="form-control">
+			<label for="username">Name</label>
+			<input type="text" placeholder="Enter your name" id="name" required/>
+            <span id="errorName" class="errorMessage"></span>
+		</div>
+		<div class="form-control">
+			<label for="email">Email</label>
+			<input type="text" placeholder="xyz@gmail.com" id="email" required/>
+            <span id="errorEmail" class="errorMessage"></span>
+			
+		</div>
+		<div class="form-control">
+			<label for="password">Password</label>
+			<input type="password" placeholder="example@123" id="password" required/>
+            <span id="errorPassword" class="errorMessage"></span>
+		</div>
+		<div class="form-control">
+			<label for="Confirmpassword">Confirm Password</label>
+			<input type="password" placeholder="Same Password" id="confirmPassword" required/>
+            <span id="errorConfPass" class="errorMessage"></span>
+			
+		</div>
+        <div class="form-control">
+			<label for="mobile">Contact Number</label>
+			<input type="text" placeholder="9876543210" id="mobile" required/>
+            <span id="errorMobile" class="errorMessage"></span>
+			
+		</div>
+        <div class="form-control">
+			<label for="branch">Choose your Branch:</label>
+              <select id="branch" name="branch">
+               <option value="Please Select">Please Select</option>
+               <option value="cse">Computer Science</option>
+               <option value="ece">Electronic and Communication</option>
+               <option value="ee">Electric and Electronic </option>
+              </select>
+                <span id="errorBranch" class="errorMessage"></span>
+		</div>
+        <div class="form-control">
+			<label for="img">Select Image</label>
+            <input type="file" id="img" name="img" accept="image/* " required>
+            <span id="errorImg" class="errorMessage"></span>	
+		</div>
+		<button type="submit">Submit</button>
+	</form>
+    <script src="script2.js"></script>
+</div>
+
+
+
+</body>
+</html>
